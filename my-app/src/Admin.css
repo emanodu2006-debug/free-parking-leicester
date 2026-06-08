@@ -1,0 +1,75 @@
+.admin-container {
+    min-height: 100vh;
+    background: #f0f2f5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 16px;
+}
+
+.admin-title {
+    font-size: 1.8rem;
+    color: #1a1a2e;
+    margin-bottom: 24px;
+}
+
+.admin-form {
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+    padding: 32px;
+    width: 100%;
+    max-width: 480px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.admin-field {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.admin-field label {
+    font-weight: 600;
+    font-size: 0.9rem;
+    color: #444;
+}
+
+.admin-field input {
+    padding: 10px 14px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1rem;
+    outline: none;
+    transition: border-color 0.2s;
+}
+
+.admin-field input:focus {
+    border-color: #1a73e8;
+}
+
+.admin-btn {
+    padding: 12px;
+    background: #1a73e8;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.admin-btn:hover {
+    background: #1558b0;
+}
+
+.admin-message {
+    text-align: center;
+    font-size: 0.95rem;
+    color: #2e7d32;
+    font-weight: 500;
+    margin: 0;
+}
