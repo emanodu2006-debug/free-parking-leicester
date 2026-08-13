@@ -9,7 +9,7 @@ function Admin() {
     const [message, setMessage] = useState("");
 
     function handleSubmit() {
-        axios.post("http://localhost:5000/admin", {
+        axios.post("/admin", {
             latitude,
             longitude,
             popup

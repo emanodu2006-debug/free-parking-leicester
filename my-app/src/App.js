@@ -38,7 +38,7 @@ function App() {
   })
 
   useEffect(() => {
-    axios.get("http://localhost:5000/markers")
+    axios.get("/markers")
       .then(response => setData(response.data));
   }, []);
 
