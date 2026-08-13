@@ -47,7 +47,9 @@ app.post('/admin', async (req, res) => {
 });
 
 // Serve React build in production
-app.use(express.static(path.join(__dirname, 'my-app/build')));
+const buildPath = path.join(__dirname, 'my-app/build');
+console.log('Build folder exists:', require('fs').existsSync(buildPath));
+app.use(express.static(buildPath));
 app.get('/{*path}', (req, res) => {
   res.sendFile(path.join(__dirname, 'my-app/build', 'index.html'));
 });
